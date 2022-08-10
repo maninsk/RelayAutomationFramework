@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestBDDAutomationPack", "RestBDDAutomationPack\RestBDDAutomationPack.csproj", "{9094409A-4650-46EA-8DC9-D7C717DF9076}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExecution", "TestExecution\TestExecution.csproj", "{079D13DC-FF99-4BBF-96EB-8592E2E93BB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9094409A-4650-46EA-8DC9-D7C717DF9076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9094409A-4650-46EA-8DC9-D7C717DF9076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9094409A-4650-46EA-8DC9-D7C717DF9076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9094409A-4650-46EA-8DC9-D7C717DF9076}.Release|Any CPU.Build.0 = Release|Any CPU
+		{079D13DC-FF99-4BBF-96EB-8592E2E93BB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{079D13DC-FF99-4BBF-96EB-8592E2E93BB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{079D13DC-FF99-4BBF-96EB-8592E2E93BB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{079D13DC-FF99-4BBF-96EB-8592E2E93BB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED3BF953-0035-41A4-91B5-228269BBE4E1}
+	EndGlobalSection
+EndGlobal
