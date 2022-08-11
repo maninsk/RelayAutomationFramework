@@ -28,36 +28,36 @@ namespace RestBDDAutomationPack
                 return payouts;
             }
 
-        public Payouts CreateRequest(string payload)
-        {
-            var client = helper.SetUrl(baseurl);
-            var request = helper.CreatePostRequest(payload);
-            var response = helper.GetResponse(client, request);
-            var createPayout = HandleContent.GetContent<Payouts>(response);
+            public Payouts CreateRequest(string payload)
+            {
+                var client = helper.SetUrl(baseurl);
+                var request = helper.CreatePostRequest(payload);
+                var response = helper.GetResponse(client, request);
+                var createPayout = HandleContent.GetContent<Payouts>(response);
 
 
-            return createPayout;
-        }
+                return createPayout;
+            }
 
-        public Payouts CreatePutRequest(string payload)
-        {
-            var client = helper.SetUrl("");
-            var request = helper.CreatePostRequest(payload);
-            var response = helper.GetResponse(client, request);
-            var createPayout = HandleContent.GetContent<Payouts>(response);
+            public Payouts CreatePutRequest(string payload)
+            {
+                var client = helper.SetUrl("");
+                var request = helper.CreatePostRequest(payload);
+                var response = helper.GetResponse(client, request);
+                var createPayout = HandleContent.GetContent<Payouts>(response);
 
 
-            return createPayout;
-        }
+                return createPayout;
+            }
 
-        public RestResponse DeleteRequest(string payload)
-        {
-            var client = helper.SetUrl("");
-            var request = helper.CreatePostRequest(payload);
-            var response = helper.GetResponse(client, request);
+            public RestResponse DeleteRequest(string payload)
+            {
+                var client = helper.SetUrl("");
+                var request = helper.CreatePostRequest(payload);
+                var response = helper.GetResponse(client, request);
             
-            return response;
-        }
+                return response;
+            }
     }
 }
 

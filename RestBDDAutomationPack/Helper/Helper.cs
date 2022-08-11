@@ -76,7 +76,5 @@ namespace RestBDDAutomationPack.Helper
             var jObject = GetTestDataJsonObject();
             return jObject[label].ToString();
         }
-
-
     }
 }

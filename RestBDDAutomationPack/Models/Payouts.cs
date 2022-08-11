@@ -4,7 +4,6 @@ using System.Text;
 
 namespace RestBDDAutomationPack.Models
 {
-
    
     public class Payouts
     {
@@ -37,6 +36,4 @@ namespace RestBDDAutomationPack.Models
         public int rate { get; set; }
         public int amount { get; set; }
     }
-
-
 }
