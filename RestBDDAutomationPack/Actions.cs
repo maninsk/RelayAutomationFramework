@@ -30,7 +30,7 @@ namespace RestBDDAutomationPack
 
         public Payouts CreateRequest(string payload)
         {
-            var client = helper.SetUrl("https://relay-candidate.proxy.beeceptor.com/");
+            var client = helper.SetUrl(baseurl);
             var request = helper.CreatePostRequest(payload);
             var response = helper.GetResponse(client, request);
             var createPayout = HandleContent.GetContent<Payouts>(response);

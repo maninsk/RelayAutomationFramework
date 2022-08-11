@@ -1,5 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using Newtonsoft.Json.Linq;
 using RestSharp;
+using System;
 using System.IO;
 
 namespace RestBDDAutomationPack.Helper
@@ -52,6 +53,30 @@ namespace RestBDDAutomationPack.Helper
            
             return request;
         }
+        public  string GetProjectRootDirectory()
+        {
+            string currentDirectory = Directory.GetCurrentDirectory();
+           
+            return currentDirectory.Split("bin")[0];
+        }
+        private  JObject GetTestDataJsonObject()
+        {
+            string path = Path.Combine(GetProjectRootDirectory().Replace("\\TestExecution", ""), "RestBDDAutomationPack\\TestData", "ExpextedData.json");
+            JObject jObject = JObject.Parse(File.ReadAllText(path));
+            return jObject;
+        }
+        public  int GetTestDataInt(string label)
+        {
+            var jObject = GetTestDataJsonObject();
+            return Int32.Parse(jObject[label].ToString());
+        }
+
+        public string GetTestDataString(string label)
+        {
+            var jObject = GetTestDataJsonObject();
+            return jObject[label].ToString();
+        }
+
 
     }
 }
